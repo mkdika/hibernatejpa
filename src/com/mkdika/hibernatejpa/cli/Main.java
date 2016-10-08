@@ -16,11 +16,11 @@ public class Main {
         printTotalRecord();
         
         Test1 t = new Test1();
-        t.setId("111");
+        t.setId("222");
         t.setColumn1("c1");
         t.setColumn2("c2");
         t.setColumn3("c3");
-        t.setColumn4(666d);
+        t.setColumn4(662d);
         
         svc.save(t);
         

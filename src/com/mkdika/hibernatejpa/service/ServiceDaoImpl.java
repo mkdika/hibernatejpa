@@ -14,13 +14,13 @@ public class ServiceDaoImpl implements ServiceDao {
     Transaction tx = null;
 
     public Session getSession() {
-        Session session = HibernateUtil.getInstance().getCurrentSession();
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
         tx = session.beginTransaction();
         return session;
     }
 
     public Session session() {
-        return HibernateUtil.getInstance().getCurrentSession();
+        return HibernateUtil.getSessionFactory().getCurrentSession();
     }
 
     @Override
